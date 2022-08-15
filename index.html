@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Shop now
+        </h1>
+    </header>
+    <main>
+        <section class="pesquisas">
+            <div class="pesquisas-box">
+                <div class="box-btn-pesquisas">
+                    <button class="btn-all">
+                        Todos produtos
+                    </button>
+                    <button class="btn-hortifruit">
+                        Hortifruit
+                    </button>
+                    <button class="btn-panificadora">
+                        Panificadora
+                    </button>
+                    <button class="btn-laticinios">
+                        laticinios
+                    </button>
+                </div>
+                <div class="box-btn-pesquisa">
+                    <div>
+                        <input type="text" maxlength="20" id = "pesquisa" placeholder="Pesquisar por" class = "pesquisa">
+                        <label class="pesquisa-icon" for="pesquisa"><img src="src/img/search.svg"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="valor-total hidden">
+            <div class="valor-text">
+                <img src="src/img/attention.svg">
+                <p>
+                    Valor total da secao selecionada
+                </p>
+            </div>
+            <div class="valor-text-preco">
+                <p class="valor-preco">
+                    R$ 32,00
+                </p>
+            </div>
+        </div>
+        <section class="vitrine">
+            <ul class="vitrine-produtos">
+                
+            </ul>
+            <aside class="carrinho">
+                <div class="box-carrinho">
+                    <header class="carrinho-header">
+                        <img src="src/img/shop-cart.svg" alt="">
+                        <h2>Carrinho</h2>
+                    </header>
+                    <ul class="carrinho-produtos">
+                    </ul>
+                    <div id = "msg" class="carrinho-box-msg">
+                            <div>   
+                                <img src="src/img/shop-bag.svg">
+                            </div>
+                            <div>
+                                <p>
+                                    Carrinho vazio
+                                </p>
+                            </div>
+                    </div>
+                    <div class="valores-pai">
+                        <div class="valores hidden">
+                            <div class="box-valores">
+                                <div class="box-quantidade">
+                                    <p>Quantidade</p>
+                                    <p id = "quantidade">0</p>
+                                </div>
+                                <div class="box-total">
+                                    <p>Total</p>
+                                    <p id = "total">R$ 0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <img class="btn-market-img" src="src/img/shop-cart-green.svg">
+                </figure>
+            </aside>
+        </section>
+    </main>
+    <script src="src/js/dataProdutos.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
